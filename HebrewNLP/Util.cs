@@ -9,7 +9,7 @@ namespace HebrewNLP
     public class Util
     {
 
-        public const string API_DOMAIN = "http://82.196.12.207";
+        public const string API_DOMAIN = "https://hebrew-nlp.co.il";
 
         public static string PostJSONData(string url, string data)
         {
