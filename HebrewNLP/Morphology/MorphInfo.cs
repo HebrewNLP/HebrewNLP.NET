@@ -41,7 +41,6 @@ namespace HebrewNLP.Morphology
         [JsonConverter(typeof(StringEnumConverter))]
         public Gender SuffixGender { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
         public bool SuffixPlural { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
