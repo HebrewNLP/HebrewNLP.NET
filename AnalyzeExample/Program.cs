@@ -12,7 +12,7 @@ namespace AnalyzeExample
             Console.OutputEncoding = new UTF8Encoding();
             Console.InputEncoding = new UTF8Encoding();
 
-            HebrewNLP.HebrewNLP.Password = "FyOHfTqh5L0yGDB";
+            HebrewNLP.HebrewNLP.Password = "...";
 
             List<MorphInfo> options = HebrewMorphology.AnalyzeWord("מילה");
 
