@@ -19,8 +19,7 @@ namespace HebrewNLP.Morphology
         [JsonConverter(typeof(StringEnumConverter))]
         public PrepositionChars PrepositionChars { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
-        public DefiniteArticle DefiniteArticle { get; set; }
+        public bool DefiniteArticle { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         public PartOfSpeech PartOfSpeech { get; set; }
@@ -28,8 +27,7 @@ namespace HebrewNLP.Morphology
         [JsonConverter(typeof(StringEnumConverter))]
         public Gender Gender { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
-        public Plural Plural { get; set; }
+        public bool Plural { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         public Person Person { get; set; }
@@ -44,7 +42,7 @@ namespace HebrewNLP.Morphology
         public Gender SuffixGender { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Plural SuffixPlural { get; set; }
+        public bool SuffixPlural { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         public Person SuffixPerson { get; set; }
@@ -66,7 +64,7 @@ namespace HebrewNLP.Morphology
 
         public bool HasDefinitiveArticle()
         {
-            return IsGrammaricallyDefiniteArticle() || DefiniteArticle == DefiniteArticle.YES;
+            return IsGrammaricallyDefiniteArticle() || DefiniteArticle;
         }
 
         public bool IsMedium()
