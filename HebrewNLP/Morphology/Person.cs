@@ -18,7 +18,10 @@ namespace HebrewNLP.Morphology
         /// </summary>
         NONE,
 
-        BOTH,
+        /// <summary>
+        /// כל האפשרויות
+        /// </summary>
+        ALL,
 
         /// <summary>
         /// גוף ראשון
