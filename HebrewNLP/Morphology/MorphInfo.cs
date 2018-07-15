@@ -39,52 +39,12 @@ namespace HebrewNLP.Morphology
         public Tense Tense { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Gender SuffixGender { get; set; }
+        public Gender OwnershipGender { get; set; }
 
-        public bool SuffixPlural { get; set; }
+        public bool OwnershipPlural { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Person SuffixPerson { get; set; }
-
-        public bool HasVavOrPrepositionOrShiabud()
-        {
-            return Vav || (PrepositionChars != PrepositionChars.NONE) || (Shiabud != Shiabud.NONE);
-        }
-
-        public bool IsGrammaricallyDefiniteArticle()
-        {
-            return Smikut == Smikut.NISMAK || HasSuffix() || PartOfSpeech == PartOfSpeech.PROPER_NOUN;
-        }
-
-        public bool HasSuffix()
-        {
-            return SuffixPerson != Person.NONE;
-        }
-
-        public bool HasDefinitiveArticle()
-        {
-            return IsGrammaricallyDefiniteArticle() || DefiniteArticle;
-        }
-
-        public bool IsMedium()
-        {
-            return Tense == Tense.PRESENT || Tense == Tense.PRESENT_PASSIVE;
-        }
-
-        public bool IsVerb()
-        {
-            return PartOfSpeech == PartOfSpeech.VERB || PartOfSpeech == PartOfSpeech.ADVERB;
-        }
-
-        public bool Nismak()
-        {
-            return Smikut == Smikut.NISMAK;
-        }
-
-        public bool Is(PartOfSpeech pos)
-        {
-            return PartOfSpeech == pos;
-        }
+        public Person OwnershipPerson { get; set; }
 
         public override int GetHashCode()
         {
@@ -97,9 +57,9 @@ namespace HebrewNLP.Morphology
             hashcode += Plural.GetHashCode() * 17;
             hashcode += Person.GetHashCode() * 17;
             hashcode += Smikut.GetHashCode() * 17;
-            hashcode += SuffixGender.GetHashCode() * 17;
-            hashcode += SuffixPlural.GetHashCode() * 17;
-            hashcode += SuffixPerson.GetHashCode() * 17;
+            hashcode += OwnershipGender.GetHashCode() * 17;
+            hashcode += OwnershipPlural.GetHashCode() * 17;
+            hashcode += OwnershipPerson.GetHashCode() * 17;
             return hashcode;
         }
 
@@ -118,9 +78,9 @@ namespace HebrewNLP.Morphology
                 if (Person != info.Person) return false;
                 if (Smikut != info.Smikut) return false;
                 if (Tense != info.Tense) return false;
-                if (SuffixGender != info.SuffixGender) return false;
-                if (SuffixPlural != info.SuffixPlural) return false;
-                if (SuffixPerson != info.SuffixPerson) return false;
+                if (OwnershipGender != info.OwnershipGender) return false;
+                if (OwnershipPlural != info.OwnershipPlural) return false;
+                if (OwnershipPerson != info.OwnershipPerson) return false;
                 return true;
             }
             return false;

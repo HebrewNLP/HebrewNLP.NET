@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebrewNLP", "HebrewNLP\HebrewNLP.csproj", "{3DDFCB51-EC01-4A10-9C7F-EF171D4C9E54}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Morphology Examples", "Morphology Examples", "{442630E0-C049-4FA7-A94F-9972E196D4B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MorphologyExamples", "MorphologyExamples", "{442630E0-C049-4FA7-A94F-9972E196D4B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NormalizeExample", "NormalizeExample\NormalizeExample.csproj", "{36B39758-4D20-40AD-9E4F-6B5B9CD15503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalizeExample", "NormalizeExample\NormalizeExample.csproj", "{36B39758-4D20-40AD-9E4F-6B5B9CD15503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyzeExample", "AnalyzeExample\AnalyzeExample.csproj", "{74DDA74A-158A-4477-A566-560A328A8BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzeExample", "AnalyzeExample\AnalyzeExample.csproj", "{74DDA74A-158A-4477-A566-560A328A8BEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebrewNLP", "HebrewNLP\HebrewNLP.csproj", "{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preprocess Examples", "Preprocess Examples", "{F7B74473-1F86-437C-AAFE-6AED70FB60F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentencerExample", "SentencerExample\SentencerExample.csproj", "{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3DDFCB51-EC01-4A10-9C7F-EF171D4C9E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DDFCB51-EC01-4A10-9C7F-EF171D4C9E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DDFCB51-EC01-4A10-9C7F-EF171D4C9E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DDFCB51-EC01-4A10-9C7F-EF171D4C9E54}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36B39758-4D20-40AD-9E4F-6B5B9CD15503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36B39758-4D20-40AD-9E4F-6B5B9CD15503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B39758-4D20-40AD-9E4F-6B5B9CD15503}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +29,14 @@ Global
 		{74DDA74A-158A-4477-A566-560A328A8BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74DDA74A-158A-4477-A566-560A328A8BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74DDA74A-158A-4477-A566-560A328A8BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{36B39758-4D20-40AD-9E4F-6B5B9CD15503} = {442630E0-C049-4FA7-A94F-9972E196D4B7}
 		{74DDA74A-158A-4477-A566-560A328A8BEC} = {442630E0-C049-4FA7-A94F-9972E196D4B7}
+		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559} = {F7B74473-1F86-437C-AAFE-6AED70FB60F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A604CF10-CD60-447C-AF66-CB7DE12B62F5}
