@@ -1,7 +1,7 @@
 # HebrewNLP.NET
 C# Library and Example for using the HebrewNLP library.
 
-To use the library you must [register a HebrewNLP account](http:\\hebrew-nlp.co.il\registration).
+To use the library you must [register a HebrewNLP account](http://hebrew-nlp.co.il/registration).
 
 You will get a password in SMS, to set it use:
 ```cs
