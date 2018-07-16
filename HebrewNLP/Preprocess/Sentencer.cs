@@ -10,13 +10,13 @@ namespace HebrewNLP.Preprocess
 
         public const string PREPROCESS_SENTENCER_ENDPOINT = "/service/preprocess/sentencer";
 
-        public class MorphRequest
+        public class SentencerRequest
         {
             public string text;
             public string token;
         }
 
-        public class MorphErrorResponse
+        public class ErrorResponse
         {
             public string error;
         }
@@ -27,12 +27,12 @@ namespace HebrewNLP.Preprocess
             {
                 throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
             }
-            MorphRequest request = new MorphRequest() { text = text, token = HebrewNLP.Password };
+            SentencerRequest request = new SentencerRequest() { text = text, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
             string responseJson = Util.PostJSONData(PREPROCESS_SENTENCER_ENDPOINT, requestJson);
             if (responseJson.StartsWith("{\"error\":"))
             {
-                MorphErrorResponse error = JsonConvert.DeserializeObject<MorphErrorResponse>(responseJson);
+                ErrorResponse error = JsonConvert.DeserializeObject<ErrorResponse>(responseJson);
                 throw new Exception(error.error);
             }
             return JsonConvert.DeserializeObject<List<string>>(responseJson);

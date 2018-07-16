@@ -44,6 +44,11 @@ namespace HebrewNLP.Morphology
         PREPOSITION,
 
         /// <summary>
+        /// סימני פיסוק
+        /// </summary>
+        PUNCTUATION,
+
+        /// <summary>
         /// מילת גוף
         /// </summary>
         PRONOUN,
