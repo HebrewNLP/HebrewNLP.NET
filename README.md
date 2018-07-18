@@ -25,7 +25,7 @@ The solution contains a few project that demonstrait the use of the library.
 
 To install from Nuget
 ```
-Install-Package HebrewNLP.NET -Version 1.2.1
+Install-Package HebrewNLP.NET -Version 1.3.0
 ```
 
 You can also build the project directly from the source by downloading the solution and building.
