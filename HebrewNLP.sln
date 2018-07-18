@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NormalizeExample", "Normali
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyzeExample", "AnalyzeExample\AnalyzeExample.csproj", "{74DDA74A-158A-4477-A566-560A328A8BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebrewNLP", "HebrewNLP\HebrewNLP.csproj", "{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HebrewNLP", "HebrewNLP\HebrewNLP.csproj", "{F1E34F74-92FC-4409-A7F5-BD27BA341EDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preprocess Examples", "Preprocess Examples", "{F7B74473-1F86-437C-AAFE-6AED70FB60F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentencerExample", "SentencerExample\SentencerExample.csproj", "{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentencerExample", "SentencerExample\SentencerExample.csproj", "{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundex Example", "Soundex Example\Soundex Example.csproj", "{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
