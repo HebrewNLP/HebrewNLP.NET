@@ -16,6 +16,8 @@ HebrewNLP.Password = "...";
 - Preprocessing
 	- Sentencer
 	- Tokenizer
+	
+- Soundex
 
 # Examples
 
