@@ -21,7 +21,7 @@ HebrewNLP.Password = "...";
 
 # Examples
 
-The solution contains a few project that demonstrait the use of the library.
+The solution contains a few project that demonstrate the use of the library.
 
 # Download
 
