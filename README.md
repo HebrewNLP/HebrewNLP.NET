@@ -25,4 +25,4 @@ The solution contains a few project that demonstrate the use of the library.
 
 # Download
 
-See [Github Releases](https://github.com/HebrewNLP/HebrewNLP.NET/releases/tag/1.3.0).
+See [Github Releases](https://github.com/HebrewNLP/HebrewNLP.NET/releases/tag/1.4.0).
