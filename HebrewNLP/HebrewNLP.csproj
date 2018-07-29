@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://hebrew-nlp.co.il/assets/eula.html</PackageLicenseUrl>
     <Copyright>Copyright 2018 hebrew-nlp.co.il</Copyright>
@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://hebrew-nlp.co.il</PackageProjectUrl>
     <PackageId>HebrewNLP.NET</PackageId>
     <PackageTags>nlp natrual-language-processing hebrew</PackageTags>
+    <PackageReleaseNotes>+ Added English-Hebrew Name translation</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

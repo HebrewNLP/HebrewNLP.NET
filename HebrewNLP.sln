@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preprocess Examples", "Prep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentencerExample", "SentencerExample\SentencerExample.csproj", "{A2E132EC-243D-4F01-9BF1-5B9CCDAAA559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundex Example", "Soundex Example\Soundex Example.csproj", "{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soundex Example", "Soundex Example\Soundex Example.csproj", "{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Name Translation Example", "Name Translation Example\Name Translation Example.csproj", "{2E07CD8E-D2EA-4411-99CC-7E421A0A3DB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F1CD79-68C6-4703-B87D-8C4EF718F9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E07CD8E-D2EA-4411-99CC-7E421A0A3DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E07CD8E-D2EA-4411-99CC-7E421A0A3DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E07CD8E-D2EA-4411-99CC-7E421A0A3DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E07CD8E-D2EA-4411-99CC-7E421A0A3DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
