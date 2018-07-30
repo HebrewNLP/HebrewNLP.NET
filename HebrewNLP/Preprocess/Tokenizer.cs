@@ -33,7 +33,7 @@ namespace HebrewNLP.Preprocess
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             SentencerRequest request = new SentencerRequest() { text = text, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -50,7 +50,7 @@ namespace HebrewNLP.Preprocess
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             SentencerRequest request = new SentencerRequest() { sentences = sentences, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -67,7 +67,7 @@ namespace HebrewNLP.Preprocess
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             SentencerRequest request = new SentencerRequest() { sentence = sentence, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);

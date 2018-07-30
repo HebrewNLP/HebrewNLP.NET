@@ -43,7 +43,7 @@ namespace HebrewNLP
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             SoundexRequest request = new SoundexRequest() { words = names, type= language, threshold = threshold, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);

@@ -40,7 +40,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { text = text, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -57,7 +57,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { sentences = sentences, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -74,7 +74,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { sentence = sentence, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -91,7 +91,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { words = words, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -117,7 +117,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { text = text, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -134,7 +134,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { sentences = sentences, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -151,7 +151,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { sentence = sentence, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
@@ -168,7 +168,7 @@ namespace HebrewNLP.Morphology
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
-                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method");
+                throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
             MorphRequest request = new MorphRequest() { words = words, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
