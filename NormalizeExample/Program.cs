@@ -14,7 +14,7 @@ namespace NormalizeExample
 
             HebrewNLP.HebrewNLP.Password = "...";
 
-            List<string> options = HebrewMorphology.NormalizeSentence("הילד שהלך לפרק ישב");
+            List<string> options = HebrewMorphology.NormalizeSentence("הילד שהלך לפרק ישב", HebrewMorphology.NormalizationType.INDEX);
 
             foreach (string option in options)
             {

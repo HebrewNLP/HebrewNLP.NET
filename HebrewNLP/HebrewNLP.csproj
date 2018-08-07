@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.4.1</Version>
+    <Version>1.5</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://hebrew-nlp.co.il/assets/eula.html</PackageLicenseUrl>
     <Copyright>Copyright 2018 hebrew-nlp.co.il</Copyright>
@@ -12,7 +12,9 @@
     <PackageProjectUrl>https://hebrew-nlp.co.il</PackageProjectUrl>
     <PackageId>HebrewNLP.NET</PackageId>
     <PackageTags>nlp natrual-language-processing hebrew</PackageTags>
-    <PackageReleaseNotes>+ Added registration link to the error message.</PackageReleaseNotes>
+    <PackageReleaseNotes>+ Added support for registration type
+
+* Note that to remain compatible with older versions the default normalization type is SEARCH (behaviour won't change)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
