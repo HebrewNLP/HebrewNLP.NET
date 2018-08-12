@@ -1,32 +1,21 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HebrewNLP
+namespace HebrewNLP.Names
 {
-    public class NameTranslation
+    public class NameAnalyzer
     {
 
-        public const string NAME_TRANSLATION_ENDPOINT = "/service/translation/names";
+        public const string NAME_TRANSLATION_ENDPOINT = "/service/names/translation";
 
         public class SoundexRequest
         {
             public string token;
 
-            [JsonConverter(typeof(StringEnumConverter))]
-            public Language type;
-
-            public int threshold;
-
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-            public string[] words;
-        }
-
-        public enum Language
-        {
-            HEBREW,
+            public string[] names;
         }
 
         public class ErrorResponse
@@ -34,18 +23,13 @@ namespace HebrewNLP
             public string error;
         }
 
-        public static List<string> Translate(string name, Language language, int threshold = 1)
-        {
-            return Translate(name, language, threshold);
-        }
-
-        public static List<List<string>> Translate(string[] names, Language language, int threshold = 1)
+        public static List<NameInfo> Analyze(string[] names)
         {
             if (string.IsNullOrEmpty(HebrewNLP.Password))
             {
                 throw new InvalidOperationException("Please set HebrewNLP.Password property with your password before using this method. To get a password register at https://hebrew-nlp.co.il/registration.");
             }
-            SoundexRequest request = new SoundexRequest() { words = names, type= language, threshold = threshold, token = HebrewNLP.Password };
+            SoundexRequest request = new SoundexRequest() { names = names, token = HebrewNLP.Password };
             string requestJson = JsonConvert.SerializeObject(request);
             string responseJson = Util.PostJSONData(NAME_TRANSLATION_ENDPOINT, requestJson);
             if (responseJson.StartsWith("{\"error\":"))
@@ -53,7 +37,7 @@ namespace HebrewNLP
                 ErrorResponse error = JsonConvert.DeserializeObject<ErrorResponse>(responseJson);
                 throw new Exception(error.error);
             }
-            return JsonConvert.DeserializeObject<List<List<string>>>(responseJson);
+            return JsonConvert.DeserializeObject<List<NameInfo>>(responseJson);
         }
 
     }

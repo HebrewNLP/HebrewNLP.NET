@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.5</Version>
+    <Version>1.6</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://hebrew-nlp.co.il/assets/eula.html</PackageLicenseUrl>
     <Copyright>Copyright 2018 hebrew-nlp.co.il</Copyright>
@@ -12,9 +12,9 @@
     <PackageProjectUrl>https://hebrew-nlp.co.il</PackageProjectUrl>
     <PackageId>HebrewNLP.NET</PackageId>
     <PackageTags>nlp natrual-language-processing hebrew</PackageTags>
-    <PackageReleaseNotes>+ Added support for registration type
+    <PackageReleaseNotes>+ Added NameAnalyzer for analyzing names
 
-* Note that to remain compatible with older versions the default normalization type is SEARCH (behaviour won't change)</PackageReleaseNotes>
+* The NameTranslation URL has changed, meaning existing code using the NameTranslation must be updated</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
