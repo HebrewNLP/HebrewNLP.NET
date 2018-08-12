@@ -17,13 +17,14 @@ HebrewNLP.Password = "...";
 	- Sentencer
 	- Tokenizer
 	
+- Name Processing
+	- English-Hebrew Name Translation
+	- Hebrew Name Analyzer 
+	
 - Multi-Lingual Soundex
 
-- English-Hebrew Name Translation
-
-# Examples
-
-The solution contains a few project that demonstrate the use of the library.
+# Documentation And Examples
+The solution contains a few project that demonstrate the use of the library. For full API documentation [click here](https://docs.hebrew-nlp.co.il/)
 
 # Download
 
