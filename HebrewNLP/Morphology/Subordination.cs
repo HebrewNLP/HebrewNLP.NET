@@ -10,7 +10,7 @@ namespace HebrewNLP.Morphology
     /// <summary>
     /// שיעבוד
     /// </summary>
-    public enum Shiabud
+    public enum Subordination
     {
 
         /// <summary>

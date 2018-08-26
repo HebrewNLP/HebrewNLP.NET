@@ -10,7 +10,7 @@ namespace HebrewNLP.Morphology
     /// <summary>
     /// סמיכות
     /// </summary>
-    public enum Smikut
+    public enum ConstructState
     {
 
         /// <summary>
