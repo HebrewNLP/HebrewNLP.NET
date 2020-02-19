@@ -12,7 +12,6 @@ namespace NormalizeExample
             Console.OutputEncoding = new UTF8Encoding();
             Console.InputEncoding = new UTF8Encoding();
 
-            HebrewNLP.HebrewNLP.Password = "...";
 
             List<string> options = HebrewMorphology.NormalizeSentence("הילד שהלך לפרק ישב", HebrewMorphology.NormalizationType.INDEX);
 
