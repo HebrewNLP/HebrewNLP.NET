@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.7</Version>
+    <Version>1.8</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://hebrew-nlp.co.il/assets/eula.html</PackageLicenseUrl>
     <Copyright>Copyright 2018 hebrew-nlp.co.il</Copyright>
@@ -12,7 +12,9 @@
     <PackageProjectUrl>https://hebrew-nlp.co.il</PackageProjectUrl>
     <PackageId>HebrewNLP.NET</PackageId>
     <PackageTags>nlp natrual-language-processing hebrew</PackageTags>
-    <PackageReleaseNotes>* Changed Smikut and Shiabud to their english names</PackageReleaseNotes>
+    <PackageReleaseNotes>* Added types of part of speech, subordinaation, construct state and  changed the name of person.
+</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

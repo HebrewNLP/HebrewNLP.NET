@@ -39,7 +39,47 @@ namespace HebrewNLP.Morphology
         KAF,
 
         /// <summary>
-        /// לא ידוע
+        ///כב...
+        /// </summary>
+        KAF_BET,
+
+        /// <summary>
+        ///כל...
+        /// </summary>
+        KAF_LAMED,
+
+        /// <summary>
+        ///כמ...
+        /// </summary>
+        KAF_MEM,
+
+        /// <summary>
+        ///בכ...
+        /// </summary>
+        BET_KAF,
+
+        /// <summary>
+        ///מכ
+        /// </summary>
+        MEM_KAF,
+
+        /// <summary>
+        ///מב
+        /// </summary>
+        MEM_BET,
+
+        /// <summary>
+        ///מל
+        /// </summary>
+        MEM_LAMED,
+
+        /// <summary>
+        ///לכ
+        /// </summary>
+        LAMED_KAF,
+
+        /// <summary>
+        /// כל אחת מן האפשרויות
         /// </summary>
         ANY
 

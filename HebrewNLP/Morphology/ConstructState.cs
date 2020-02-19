@@ -12,26 +12,25 @@ namespace HebrewNLP.Morphology
     /// </summary>
     public enum ConstructState
     {
-
         /// <summary>
-        /// אין
+        /// אין סמיכות
         /// </summary>
         NONE,
 
         /// <summary>
-        /// שניהם
+        /// נסמך
         /// </summary>
-        BOTH,
+        POSSESED,
 
         /// <summary>
         /// נפרד
         /// </summary>
-        NIFRAD,
+        POSSESOR,
 
         /// <summary>
-        /// נסמך
+        /// יכול להיות גם נפרד וגם נסמך
         /// </summary>
-        NISMAK
+        BOTH
 
     }
 }

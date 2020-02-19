@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace HebrewNLP.Morphology
 {
-
     /// <summary>
     /// שיעבוד
     /// </summary>
     public enum Subordination
     {
-
         /// <summary>
         /// אף אחד
         /// </summary>
@@ -39,19 +37,28 @@ namespace HebrewNLP.Morphology
         SHEKSHE,
 
         /// <summary>
+        ///מש...
+        /// </summary>
+        MISHE,
+
+        /// <summary>
+        /// מכש...
+        /// </summary>
+        MIKSHE,
+
+        /// <summary>
         /// ה...
         /// </summary>
         HA,
 
         /// <summary>
-        /// לא ידוע
-        /// </summary>
-        ANY,
-
-        /// <summary>
         /// שה...
         /// </summary>
-        SHEHA
+        SHEHA,
 
+        /// <summary>
+        /// לא ידוע
+        /// </summary>
+        ANY
     }
 }

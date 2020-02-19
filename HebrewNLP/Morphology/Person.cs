@@ -12,31 +12,31 @@ namespace HebrewNLP.Morphology
     /// </summary>
     public enum Person
     {
-
         /// <summary>
-        /// אין
+        /// אין גוף
         /// </summary>
-        NONE,
-
-        /// <summary>
-        /// כל האפשרויות
-        /// </summary>
-        ALL,
+        NONE = 0,
 
         /// <summary>
         /// גוף ראשון
         /// </summary>
-        FIRST_PERSON,
+        FIRST = 1,
 
         /// <summary>
         /// גוף שני
         /// </summary>
-        SECOND_PERSON,
+        SECOND = 2,
 
         /// <summary>
         /// גוף שלישי
         /// </summary>
-        THIRD_PERSON
+        THIRD = 3,
+
+        /// <summary>
+        /// גם וגם
+        /// </summary>
+        ANY = 4
+
 
     }
 }

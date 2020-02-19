@@ -10,6 +10,7 @@ namespace HebrewNLP.Morphology
     {
 
         public string BaseWord { get; set; }
+        public string BaseWordMenukad { get; set; }
 
         public bool Vav { get; set; }
 

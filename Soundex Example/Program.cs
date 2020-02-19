@@ -10,7 +10,6 @@ namespace Soundex_Example
     {
         static void Main(string[] args)
         {
-            HebrewNLP.HebrewNLP.Password = "...";
 
             string[] words = new string[] { "itay", "איתי" };
             List<List<string>> phoneticCodes = HebrewNLP.Soundexer.Soundex(words);

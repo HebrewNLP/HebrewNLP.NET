@@ -8,7 +8,6 @@ namespace Name_Translation_Example
     {
         static void Main(string[] args)
         {
-            HebrewNLP.HebrewNLP.Password = "...";
 
             List<List<string>> options = NameTranslation.Translate(new String[] { "haim", "haym" }, NameTranslation.Language.HEBREW);
 

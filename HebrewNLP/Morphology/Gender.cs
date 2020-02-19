@@ -12,26 +12,25 @@ namespace HebrewNLP.Morphology
     /// </summary>
     public enum Gender
     {
-
-        /// <summary>
-        /// שניהם
-        /// </summary>
-        BOTH,
-
         /// <summary>
         /// אף אחד
         /// </summary>
-        NONE,
+        NONE=0,
 
         /// <summary>
         /// זכר
         /// </summary>
-        MALE,
+        MALE=1,
 
         /// <summary>
         /// נקבה
         /// </summary>
-        FEMALE
+        FEMALE=2,
+        
+        /// <summary>
+        /// שניהם
+        /// </summary>
+        BOTH=3
 
     }
 }

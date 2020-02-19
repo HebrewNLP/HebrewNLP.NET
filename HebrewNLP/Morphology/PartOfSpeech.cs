@@ -44,11 +44,6 @@ namespace HebrewNLP.Morphology
         PREPOSITION,
 
         /// <summary>
-        /// סימני פיסוק
-        /// </summary>
-        PUNCTUATION,
-
-        /// <summary>
         /// מילת גוף
         /// </summary>
         PRONOUN,
@@ -81,7 +76,27 @@ namespace HebrewNLP.Morphology
         /// <summary>
         /// שם פרטי
         /// </summary>
-        PROPER_NOUN
+        PROPER_NOUN,
+        
+        /// <summary>
+        /// סימני פיסוק 
+        /// </summary>
+        PUNCTUATION,
+        
+        ///
+        /// מילת התפעלות - וואו
+        /// 
+        INTERJECTION, //at type of practicle
+
+        /// <summary>
+        /// סימנים שאינם אותיות
+        /// </summary>
+        SYMBOL,
+   
+        /// <summary>
+        ///אחר
+        /// </summary>
+        OTHER,
 
     }
 }
