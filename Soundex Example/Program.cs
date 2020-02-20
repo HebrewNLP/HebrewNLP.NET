@@ -10,27 +10,28 @@ namespace Soundex_Example
     {
         static void Main(string[] args)
         {
+            //TODO fill the password
+            HebrewNLP.HebrewNLP.Password = "";
 
-            string[] words = new string[] { "itay", "איתי" };
-            List<List<string>> phoneticCodes = HebrewNLP.Soundexer.Soundex(words);
+            string[] words = new string[] {"itay", "איתי"};
+            List<List<uint>> phoneticCodes = HebrewNLP.Soundexer.Soundex(words);
             bool found = false;
-            string code = null;
+            uint? code = null;
             Console.WriteLine(words[0] + ":");
-            foreach (string str in phoneticCodes[0])
+            foreach (var i in phoneticCodes[0])
             {
-                Console.WriteLine("\t" + str);
-                if(phoneticCodes[1].Contains(str))
+                Console.WriteLine("\t" + i);
+                if (!found && phoneticCodes[1].Contains(i))
                 {
                     found = true;
-                    code = str;
-                    break;
+                    code = i;
                 }
             }
 
             Console.WriteLine(words[1] + ":");
-            foreach (string str in phoneticCodes[1])
+            foreach (var i in phoneticCodes[1])
             {
-                Console.WriteLine("\t" + str);
+                Console.WriteLine("\t" + i);
             }
 
             Console.WriteLine();
@@ -38,7 +39,8 @@ namespace Soundex_Example
             if (found)
             {
                 Console.WriteLine("words are probably the same (" + code + ")");
-            }else
+            }
+            else
             {
                 Console.WriteLine("words are probably different");
             }

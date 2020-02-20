@@ -9,11 +9,13 @@ namespace NormalizeExample
     {
         static void Main(string[] args)
         {
+            //TODO fill the password
+            HebrewNLP.HebrewNLP.Password = "";
+
             Console.OutputEncoding = new UTF8Encoding();
             Console.InputEncoding = new UTF8Encoding();
 
-
-            List<string> options = HebrewMorphology.NormalizeSentence("הילד שהלך לפרק ישב", HebrewMorphology.NormalizationType.INDEX);
+           List<string> options = HebrewMorphology.NormalizeSentence("הילד שהלך לפרק ישב", NormalizationType.INDEX);
 
             foreach (string option in options)
             {

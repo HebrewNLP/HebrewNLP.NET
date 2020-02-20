@@ -1,6 +1,7 @@
 ﻿using HebrewNLP;
 using System;
 using System.Collections.Generic;
+using HebrewNLP.Names;
 
 namespace Name_Translation_Example
 {
@@ -9,7 +10,10 @@ namespace Name_Translation_Example
         static void Main(string[] args)
         {
 
-            List<List<string>> options = NameTranslation.Translate(new String[] { "haim", "haym" }, NameTranslation.Language.HEBREW);
+            //TODO fill the password
+            HebrewNLP.HebrewNLP.Password = "";
+            
+            List<List<string>> options = NameTranslation.Translate(new String[] { "haim", "haym" }, Language.HEBREW);
 
             foreach (List<string> option in options)
             {

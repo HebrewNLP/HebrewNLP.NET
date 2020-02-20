@@ -9,6 +9,9 @@ namespace AnalyzeExample
     {
         static void Main(string[] args)
         {
+            //TODO fill the password
+            HebrewNLP.HebrewNLP.Password = "";
+
             Console.OutputEncoding = new UTF8Encoding();
             Console.InputEncoding = new UTF8Encoding();
 
