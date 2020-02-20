@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.8</Version>
+    <Version>1.8.1</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://hebrew-nlp.co.il/assets/eula.html</PackageLicenseUrl>
     <Copyright>Copyright 2018 hebrew-nlp.co.il</Copyright>
@@ -14,6 +14,8 @@
     <PackageReleaseNotes>* Added types of part of speech, subordinaation, construct state and  changed the name of person.
 </PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.8.1.0</AssemblyVersion>
+    <FileVersion>1.8.1.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
