@@ -11,7 +11,7 @@ namespace Name_Translation_Example
         {
 
             //TODO fill the password
-            HebrewNLP.HebrewNLP.Password = "hwYQWyc37oOAVXm";
+            HebrewNLP.HebrewNLP.Password = "";
 
 
             List<List<string>> res = HebrewNLP.Preprocess.Tokenizer.TokenizeSentence(".זה משפט ארוך מאןד הכולל הרבה מילים");
