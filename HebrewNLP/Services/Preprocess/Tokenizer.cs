@@ -19,9 +19,9 @@ namespace HebrewNLP.Preprocess
             return Service.GetService<List<List<string>>>(new TokenizerRequest() {sentences = sentences});
         }
 
-        public static List<List<string>> TokenizeSentence(string sentence)
+        public static List<string> TokenizeSentence(string sentence)
         {
-            return Service.GetService<List<List<string>>>(new TokenizerRequest() {sentence = sentence});
+            return Service.GetService<List<string>>(new TokenizerRequest() {sentence = sentence});
         }
     }
 }

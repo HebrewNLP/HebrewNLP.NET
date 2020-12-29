@@ -17,15 +17,15 @@ namespace HebrewNLP
                     return password;
                 const string url = "https://hebrew-nlp.co.il/registration";
 
-                var message = $@"Please set HebrewNLP.Password property with your password before using this method.
+                var message = $@"Please set 'HebrewNLP.Password' property with your password before using this method.
  To get a password register at {url} .
-(The program will open the browser automaticaly)";
+(The program will open the browser automatically)";
                 Console.Error.WriteLine(message);
                 Console.Error.WriteLine();
                 new Process {StartInfo = {UseShellExecute = true, FileName = url}}.Start();
 
                 var messageException =
-                    $@"Cannot use the service without initialising HebrewNLP.Password property with your password.
+                    $@"Cannot use the service without initialising 'HebrewNLP.Password' property with your password.
  To get a password register at {url} .";
                 throw new InvalidOperationException(messageException);
             }

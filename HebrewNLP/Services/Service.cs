@@ -28,39 +28,19 @@ namespace HebrewNLP
             Stream requestStream = request.GetRequestStream();
             requestStream.Write(bytes, 0, bytes.Length);
             requestStream.Close();
-            HttpWebResponse response;
-            response = (HttpWebResponse) request.GetResponse();
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                Stream responseStream = response.GetResponseStream();
-                string responseStr = new StreamReader(responseStream).ReadToEnd();
-                return responseStr;
-            }
-
-            return null;
+            var response = (HttpWebResponse) request.GetResponse();
+            var responseStream = response.GetResponseStream();
+            string responseStr = null;
+            if (responseStream != null)
+                responseStr = new StreamReader(responseStream).ReadToEnd();
+            if (response.StatusCode != HttpStatusCode.OK)
+                throw new Exception($"Error in server. respone: " +
+                                    JsonConvert.SerializeObject(new {response.StatusCode, response = responseStr}));
+            return responseStr;
         }
 
         public TResponse GetService<TResponse>(TRequest request)
         {
-            if (string.IsNullOrEmpty(HebrewNLP.Password))
-            {
-                const string url = "https://hebrew-nlp.co.il/registration";
-                var message =$@"Please set HebrewNLP.Password property with your password before using this method.
- To get a password register at {url} .
-(The program will open the browser automaticaly)";
-                var messageException =
-                    $@"Cannot use the service without initialising HebrewNLP.Password property with your password.
- To get a password register at {url} .";
-                Console.Error.WriteLine(message);
-                Console.Error.WriteLine();
-                new Process
-                {
-                    // true is the default, but it is important not to set it to false
-                    StartInfo = {UseShellExecute = true, FileName = url}
-                }.Start();
-                throw new InvalidOperationException(messageException);
-            }
-
             request.token = HebrewNLP.Password;
             string requestJson = JsonConvert.SerializeObject(request);
             string responseJson = PostJSONData(EndPoint, requestJson);
