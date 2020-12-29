@@ -15,16 +15,11 @@ namespace SentencerExample
             //TODO fill the password
             HebrewNLP.HebrewNLP.Password = "";
 
+            Console.OutputEncoding = new UTF8Encoding();
+            Console.InputEncoding = new UTF8Encoding();
 
-            List<string> res = HebrewNLP.Preprocess.Tokenizer.TokenizeSentence(".זה משפט ארוך מאןד הכולל הרבה מילים");
-            foreach (string word in res)
-            {
-                Console.WriteLine(Reverse(word));
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            List<string> options = Sentencer.Sentences("התשובה הקצרה - כי אין תשתית כזו זמינה כיום. התשובה המלאה יותר - כקבוצה של מתכנתים העוסקים בתחום נאלצנו תמיד ללכת בדרך הקשה כשבאנו לפתח מוצרים הדורשים ניתוח שפה בעברית. וכך נוצר שיתוף הפעולה בעזרתו אנו בונים את השרותים והתשתיות. הציבור הישראלי תמיד סובל ממוצרים נחותים כשמגיעים ליכולות עיבוד שפה טבעית, למעט כמה יוצאי דופן הטכנולוגיה כמעט לא נגישה בעברית אם זה בגלל תמחור גבוהה, ואם מפני שהטכנולוגיה היא בשימוש פנימי בלבד.");
+
+            List<string> options = Sentencer.Sentences("äúùåáä ä÷öøä - ëé àéï úùúéú ëæå æîéðä ëéåí. äúùåáä äîìàä éåúø - ë÷áåöä ùì îúëðúéí äòåñ÷éí áúçåí ðàìöðå úîéã ììëú áãøê ä÷ùä ëùáàðå ìôúç îåöøéí äãåøùéí ðéúåç ùôä áòáøéú. åëê ðåöø ùéúåó äôòåìä áòæøúå àðå áåðéí àú äùøåúéí åäúùúéåú. äöéáåø äéùøàìé úîéã ñåáì îîåöøéí ðçåúéí ëùîâéòéí ìéëåìåú òéáåã ùôä èáòéú, ìîòè ëîä éåöàé ãåôï äèëðåìåâéä ëîòè ìà ðâéùä áòáøéú àí æä áâìì úîçåø âáåää, åàí îôðé ùäèëðåìåâéä äéà áùéîåù ôðéîé áìáã.");
 
             foreach (string option in options)
             {

@@ -11,14 +11,12 @@ namespace Name_Translation_Example
         {
 
             //TODO fill the password
-            HebrewNLP.HebrewNLP.Password = "";
-            
-            List<List<string>> options = NameTranslation.Translate(new String[] { "haim", "haym" }, Language.HEBREW);
+            HebrewNLP.HebrewNLP.Password = "hwYQWyc37oOAVXm";
 
-            foreach (List<string> option in options)
-            {
-                Console.WriteLine(option.Count != 0 ? option[0] : null);
-            }
+
+            List<List<string>> res = HebrewNLP.Preprocess.Tokenizer.TokenizeSentence(".זה משפט ארוך מאןד הכולל הרבה מילים");
+
+            Console.Write(res.Count);
         }
     }
 }
